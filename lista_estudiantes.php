@@ -47,9 +47,9 @@ $consulta=$Estudiantes->listar_estudiantes();
 			<th>Nombres</th>
 			<th>Apellidos</th>
 			<th>Cedula</th>
-			<th>Edad</th>
 			<th>Ciudad</th>
-			<th>Sexo</th>
+			<th>Edad</th>
+			<th>Genero</th>
 			<th>Acciones</th>
 
 		</tr>
@@ -62,9 +62,9 @@ $consulta=$Estudiantes->listar_estudiantes();
   			<td>{$c['est_nombres']}</td>
   			<td>{$c['est_apellidos']}</td>
   			<td>{$c['est_cedula']}</td>
-  			<td>{$c['est_edad']}</td>
   			<td>{$c['est_ciudad']}</td>
-  			<td>{$c['est_sexo']}</td>
+  			<td>{$c['est_edad']}</td>
+  			<td>{$c['est_genero']}</td>
   			<td>
   			<a href=''>
   				<img src='lapiz.png' />
