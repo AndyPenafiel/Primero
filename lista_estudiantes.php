@@ -12,7 +12,7 @@ $consulta=$Estudiantes->listar_estudiantes();
 	<style>
 		th{
 			padding: 8px;
-			background: black;
+			background: blue;
 			color: white;
 		}
 		td{
@@ -40,7 +40,10 @@ $consulta=$Estudiantes->listar_estudiantes();
 	</style>
 </head>
 <body>
-	<H1 style="background-color:#008000;color:#ffffff;"><center>lista estudiantes</center></H1>
+	<H1 style="background-color:#008000;color:#ffffff;"><center>lista estudiantes</center></H1> 
+
+	<a href="formulario_estudiante.php">Nuevo Estudiante</a>
+
 	<table align="center">
 		<tr>
 			<th>Nº</th>
