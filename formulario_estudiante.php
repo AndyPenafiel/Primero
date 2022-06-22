@@ -4,32 +4,56 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Formulario</title>
+	<style>
+	.contenedores{
+		margin-top:2px;
+		margin-left:50px;
+	}
+	label{
+			background:#00CC00 ;
+			width: 100px;
+			float: left;
+			color:#ffffff;
+			text-decoration: none;
+			font-family:Arial;
+			border-radius: 5px;
+			box-shadow:5px 5px 10px #99FF99;
+			border: solid 1px black ;
+
+	}
+	</style>
 </head>
 <body>
 	<h1>Formulario de registro de estudiantes</h1>
 	<form action=""method="POST">
-		<label for="est_nombres">Nombres</label>
-		<input type="text" name="est_nombres" id="est_nombres">
 
-		<br>
+<div class="contenedores">
+	<label for="est_nombres">Nombres</label>
+	<input type="text" name="est_nombres" id="est_nombres">	
+</div>
 
-<label for="est_apellidos">Nombres</label>
-<input type="text" name="est_apellidos" id="est_apellidos">
+<div class="contenedores">
+	<label for="est_apellidos">Apellidos</label>
+	<input type="text" name="est_apellidos" id="est_apellidos">	
+</div>
 
-		<br>
+<div class="contenedores">
+	<label for="est_cedula">Cedula</label>
+	<input type="text" name="est_cedula" id="est_cedula">
+</div>
 
-<label for="est_cedula">Nombres</label>
-<input type="text" name="est_cedula" id="est_cedula">
+<div class="contenedores">
+	<label for="est_edad">Edad</label>
+	<input type="text" name="est_edad" id="est_edad">
+</div>
 
-		<br>
+<div class="contenedores">
+	<label for="est_genero">Genero</label>
+	<input type="text" name="est_genero" id="est_genero">	
+</div>
 
-<label for="est_edad">Nombres</label>
-<input type="text" name="est_edad" id="est_edad">
-
-		<br>
-
-<label for="est_genero">Nombres</label>
-<input type="text" name="est_genero" id="est_genero">
+<br>
+<br>
 
 <button>Guardar</button>
 
