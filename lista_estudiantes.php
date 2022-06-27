@@ -69,12 +69,14 @@ $consulta=$Estudiantes->listar_estudiantes();
   			<td>{$c['est_edad']}</td>
   			<td>{$c['est_genero']}</td>
   			<td>
-  			<a href=''>
+  			<a href='formulario_estudiante.php?est_id={$c["est_id"]}'>
   				<img src='lapiz.png' />
   			</a>
+
   			<a href=''>
   			<img src='basura.png' />
   			</a>
+
   			</td>
   			</tr>";	
   }
