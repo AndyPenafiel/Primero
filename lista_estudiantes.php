@@ -44,6 +44,9 @@ $consulta=$Estudiantes->listar_estudiantes();
 
 	<a href="formulario_estudiante.php">Nuevo Estudiante</a>
 
+
+
+
 	<table align="center">
 		<tr>
 			<th>Nº</th>
@@ -56,6 +59,7 @@ $consulta=$Estudiantes->listar_estudiantes();
 			<th>Acciones</th>
 
 		</tr>
+			<a href="index.php">Regresar</a>
   	<?php
   	$x=0;
   	foreach($consulta as $c){
@@ -73,14 +77,24 @@ $consulta=$Estudiantes->listar_estudiantes();
   				<img src='lapiz.png' />
   			</a>
 
-  			<a href=''>
-  			<img src='basura.png' />
+  		 <a href='acciones_estudiantes.php?est_id={$c['est_id']} 'onclick='return validar()'  >
+  		 <img src='basura.png'/>
   			</a>
+
 
   			</td>
   			</tr>";	
   }
    ?>	
-	</table>
+</table>
 </body>
 </html>
+<script>
+	function validar(){
+		if(confirm("Desea eliminar")){
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
